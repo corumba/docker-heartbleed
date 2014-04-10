@@ -11,7 +11,7 @@ ENV GOPATH /
 ENV GOROOT /go
 ENV PATH $PATH:$GOROOT/bin
 
-RUN go get github.com/FiloSottile/Heartbleed
-RUN go install github.com/FiloSottile/Heartbleed
+RUN go get github.com/corumba/Heartbleed
+RUN go install github.com/corumba/Heartbleed
 
 ENTRYPOINT ["/bin/Heartbleed"]
